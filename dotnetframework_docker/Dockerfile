@@ -1,7 +1,7 @@
 #Depending on the operating system of the host machines(s) that will build or run the containers, the image specified in the FROM statement may need to be changed.
 #For more information, please see https://aka.ms/containercompat 
 
-FROM FROM microsoft/dotnet-framework:4.7.1-windowsservercore-1709
+FROM microsoft/dotnet-framework:4.7.1-windowsservercore-1709
 ARG source
 WORKDIR /inetpub/wwwroot
 COPY ./dotnetframework_docker/Published_Code/ .
