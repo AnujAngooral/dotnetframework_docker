@@ -22,4 +22,4 @@ jobs:
     - name: Build the Docker image
       run: docker build --tag anujangooral/dotnetframework_docker --file ./dotnetframework_docker/Dockerfile . 
     - name: docker push
-        docker push anujangooral/dotnetframework_docker
+      run: docker push anujangooral/dotnetframework_docker
