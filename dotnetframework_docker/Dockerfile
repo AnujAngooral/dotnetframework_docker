@@ -7,7 +7,7 @@
 #COPY ./dotnetframework_docker/Published_Code/ .
 #
 
-FROM microsoft/dotnet-framework:4.7.2-sdk AS build
+FROM mcr.microsoft.com/dotnet/framework/sdk:4.8 AS build
 WORKDIR /app
 
 # copy csproj and restore as distinct layers
